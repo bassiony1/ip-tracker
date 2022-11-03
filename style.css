@@ -1,0 +1,109 @@
+:root {
+--Very-Dark-Gray: hsl(0, 0%, 17%);
+--Dark-Gray: hsl(0, 0%, 59%);
+}
+*::after , *::before , * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    font-family: 'Rubik', sans-serif;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+.header{
+    width: 100vw;
+    min-height: 30vh;
+    background: url("images/pattern-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 30px;
+}
+.header .title {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+.header .input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 50%;
+    max-height: 50px;
+}
+    
+@media screen and (max-width:830px){
+    .header .input-group {
+        width: 90%;
+    }
+    .header .data {
+        flex-direction: column;
+    }
+}
+.header .input-group input[type='text']{
+    border: none;
+    flex: 1;
+    outline: none;
+    padding: 20px;
+}
+.header .input-group .btn {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-tap-highlight-color: white;
+    height: 100%;
+}
+.header .input-group .btn:hover{
+    background-color: var(--Very-Dark-Gray);
+}
+.header .data {
+    
+    width: 70%;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    text-align: center;
+    translate: 0 50%;
+    z-index: 2;
+    
+}
+.header .data section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+.header .data section .sec-title {
+    font-size: 14px;
+    color: var(--Dark-Gray);
+}
+.header .data section .sec-data {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--Very-Dark-Gray);
+}
+
+#map {
+    z-index: 1;
+    height: 70vh;
+    width: 100vw;
+}

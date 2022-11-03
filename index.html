@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"> 
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+crossorigin=""/>
+<script>
+  alert("Please Disable Your AdBlocker For it to Work Properly");
+</script>
+<script defer src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+crossorigin=""></script>
+<script defer src="script.js"></script> 
+  <title>IP Address Tracker</title>
+</head>
+<body>
+  <header class="header">
+    <div class="title">IP Address Tracker</div>
+    <div class="input-group">
+      <input data-input type="text" name="" id="" placeholder="Search for any IP address or Domain ">
+      <a data-btn class="btn">&gt;</a>
+    </div>
+    <div class="data">
+      <section>
+        <div class="sec-title">IP ADDRESS</div>
+        <div data-ip class="sec-data"></div>
+      </section>
+      <section> 
+        <div class="sec-title">LOCATION</div>
+        <div data-loc class="sec-data"></div>
+
+      </section>
+      <section>
+        <div class="sec-title">TIMEZONE</div>
+        <div data-time class="sec-data"></div>
+
+      </section>
+      <section> 
+        <div class="sec-title">ISP</div>
+        <div data-sp class="sec-data"></div>
+
+      </section>
+    </div>
+  </header>
+  <div id="map"></div>
+</body>
+</html>
